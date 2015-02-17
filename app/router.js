@@ -6,7 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('users');
+  this.resource('users');
+  this.resource('pairs', function(){
+    this.resource('pair', { path : 'pair/:pair_id' });
+  });
 });
 
 export default Router;
