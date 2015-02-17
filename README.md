@@ -11,9 +11,11 @@ Domain Objects:
 - fullname
 - email
 - availability
+
 ### Pairings
 - week id
 - [pair,..]
+
 ### Pair
 - [user1,user2]
 - notes
