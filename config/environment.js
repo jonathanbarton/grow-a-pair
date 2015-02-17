@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'grow-a-pair',
+    podModulePrefix: 'grow-a-pair/pods',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
