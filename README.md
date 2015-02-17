@@ -4,6 +4,7 @@ Rules for the Pairing Tool:
 1. No more than 2 times pairing with the same user per month
 2. No pairing with the previous week's paired user
 3. Sick/Holiday flag
+4. Odd person out gets FREE WEEK
 
 Domain Objects:
 
