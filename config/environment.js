@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'grow-a-pair',
     environment: environment,
+    podModulePrefix: 'app/pods',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
