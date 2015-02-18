@@ -6,25 +6,32 @@ module.exports = function(app) {
     res.send({
       "users":
         [{
+            "id":"0",
             "firstName" : "Ursula",
             "lastName": "Yethon",
             "email": "ursula.yethon@mheducation.com"
           },
           {
+            "id": "1",
             "firstName" : "Jonathan",
             "lastName": "",
             "email": "@mheducation.com"
           },
-          { 
+          {
+            "id": "2",
             "firstName" : "Varun",
             "lastName": "",
             "email": "@mheducation.com"
           },
-          { "firstName" : "Giorgio",
+          {
+            "id": "3",
+            "firstName" : "Giorgio",
             "lastName": "",
             "email": "@mheducation.com"
           },
-          { "firstName" : "Rico",
+          {
+            "id": "4",
+            "firstName" : "Rico",
             "lastName": "",
             "email": "@mheducation.com"
           }]
