@@ -15,7 +15,6 @@ module('Acceptance: Users', {
 });
 
 test('should have a list container for users', function(assert) {
-    
  visit('/users');
   andThen(function(){
     var listContainer = find('.user-list');
@@ -33,8 +32,3 @@ test('should contain 2 or more users', function(assert) {
   });
 
 });
-
-function loadUsersPage() {
- return  visit('/users');
-}
-
