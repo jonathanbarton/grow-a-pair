@@ -2,8 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model: function() {
-    return [
-      {}
-    ];
+    return this.store.findAll('user');
   }
 });
