@@ -7,7 +7,6 @@ var application;
 module('Acceptance: Users', {
   beforeEach: function() {
     application = startApp();
-    loadUsersPage();
   },
 
   afterEach: function() {
@@ -16,10 +15,11 @@ module('Acceptance: Users', {
 });
 
 test('should have a list container for users', function(assert) {
-
+    
+ visit('/users');
   andThen(function(){
     var listContainer = find('.user-list');
-
+    debugger;
     assert.ok(listContainer.length);
   });
 
@@ -34,20 +34,7 @@ test('should contain 2 or more users', function(assert) {
 
 });
 
-
-test('visiting /users', function(assert) {
-  loadUsersPage();
-
-  andThen(function() {
-    assert.equal(currentPath(), 'users');
-    var title = find('#title').text();
-    assert.equal(title, 'Welcome to Ember.js');
-
-    var userList = find('.user-list .user');
-//    assert.ok(userList.length);
-  });
-});
-
 function loadUsersPage() {
-  visit('/users');
+ return  visit('/users');
 }
+
