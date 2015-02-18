@@ -1,6 +1,11 @@
+user list
 <ul class='user-list'>
   {{#each user in model}}
     <li>{{user.fullName}}</li>
   {{/each}}
 </ul>
 
+pair list
+{{outlet}}
+
+<button class="generate" {{action "generate"}}>Generate</button>
