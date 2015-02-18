@@ -15,20 +15,20 @@ module('Acceptance: Users', {
 });
 
 test('should have a list container for users', function(assert) {
- visit('/users');
-  andThen(function(){
+ visit('/users')
+  .then(function(){
     var listContainer = find('.user-list');
-    debugger;
     assert.ok(listContainer.length);
   });
 
 });
+
 test('should contain 2 or more users', function(assert) {
+  visit('/users')
+    .then(function(){
+      var listContainer = find('.user-list li');
 
-  andThen(function(){
-    var listContainer = find('.user-list li');
-
-    assert.ok(listContainer.length > 1);
-  });
+      assert.ok(listContainer.length > 1);
+    });
 
 });
